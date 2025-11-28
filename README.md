@@ -2,7 +2,9 @@
 > This repository has been created and populated a few years ago (some resources and concepts are outdated). Feel free to PR new links and updates.
 
 # JavaScript
-Several links, articles and blogs to understand how modern JavaScript interpreters/compilers work and optimize codes. Also includes various resources on ECMAScript and object-oriented programming.
+Several links, articles and blogs to understand how modern JavaScript interpreters/compilers work and optimize codes.
+
+> Also includes various resources on ECMAScript and object-oriented programming.
 
 ## High-level resources
 Different articles and tools dealing with more or less important notions:
@@ -35,6 +37,8 @@ Different articles and tools dealing with more or less important notions:
 
 ## Virtual Machine, Interpreter, Compiler
 
+A for complete list of JS engines, look [here](https://zoo.js.org/).
+
 ### Porffor
 
 - [Eliminating JavaScript cold starts on AWS Lambda](https://goose.icu/lambda/)
@@ -48,7 +52,7 @@ Different articles and tools dealing with more or less important notions:
 
 ### V8 Engine
 
-- [V8 Engine Docs](https://v8.dev/docs) - I highly recommend the documentation on: Ignition, TurboFan, Torque
+- [V8 Engine Docs](https://v8.dev/docs)
 - [V8 Engine Blog](https://v8.dev/blog)
 - [Egorov V8 resources](https://mrale.ph/v8/resources.html) - An extension of this repo 
 - [Understanding V8’s Bytecode](https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775)
@@ -56,6 +60,13 @@ Different articles and tools dealing with more or less important notions:
 - [Marja Hölttä: Parsing JavaScript - better lazy than eager?](https://www.youtube.com/watch?v=Fg7niTmNNLg&list=PL37ZVnwpeshFmAPr65sU2O5WMs7_CGjs_&index=11)
 - [Embedding V8 in the real world by Stanimira Vlaeva](https://www.youtube.com/watch?v=wz7Znu6tqFw&list=PL37ZVnwpeshHwJPVBqEnZild7QHWhdufu&index=17)
 - [How cloudflare Workers works](https://developers.cloudflare.com/workers/reference/how-workers-works/)
+
+#### Garbage collector
+
+- [Orinoco: young generation garbage collection](https://v8.dev/blog/orinoco-parallel-scavenger)
+- [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)
+- [Concurrent marking in V8](https://v8.dev/blog/concurrent-marking)
+- [Modern Algorithms for Garbage Collection](https://xnacly.me/papers/modern_algorithms_for_gc.pdf)
 
 #### Shared documents on different performance issues
 
