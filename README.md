@@ -1,7 +1,8 @@
-> Note: ⚠️ feel free to PR new links! It becomes quite difficult to find interesting resources.
+> [!IMPORTANT]
+> This repository has been created and populated a few years ago (some resources and concepts are outdated). Feel free to PR new links and updates.
 
 # JavaScript
-Several links, articles and blogs to understand how modern JavaScript compilers work and optimize our codes. Also includes various resources on ECMAScript and object-oriented programming.
+Several links, articles and blogs to understand how modern JavaScript interpreters/compilers work and optimize codes. Also includes various resources on ECMAScript and object-oriented programming.
 
 ## High-level resources
 Different articles and tools dealing with more or less important notions:
@@ -25,6 +26,7 @@ Different articles and tools dealing with more or less important notions:
 - [The Black Cat of Microbenchmarks](https://mrale.ph/blog/2014/02/23/the-black-cat-of-microbenchmarks.html)
 - [JavaScript MicroBenchmarks (from Benedikt Meurer)](https://github.com/bmeurer/js-micro-benchmarks) - Real example of how to make a benchmark code
 
+> [!NOTE]
 > Vyacheslav Egorov has written many more interesting articles (I recommend you to read them all).
 
 ### Tools
@@ -33,9 +35,16 @@ Different articles and tools dealing with more or less important notions:
 
 ## Virtual Machine, Interpreter, Compiler
 
+### Porffor
+
+- [Eliminating JavaScript cold starts on AWS Lambda](https://goose.icu/lambda/)
+
 ### Chakra Core
 
-- [ChakraCore Resources](https://github.com/Microsoft/ChakraCore/wiki/Resources)
+- [Resources](https://github.com/Microsoft/ChakraCore/wiki/Resources)
+
+> [!WARNING]
+> The compiler is not maintained anymore (but resources still available)
 
 ### V8 Engine
 
@@ -46,25 +55,9 @@ Different articles and tools dealing with more or less important notions:
 - [v8-perf](https://github.com/thlorenz/v8-perf)
 - [Marja Hölttä: Parsing JavaScript - better lazy than eager?](https://www.youtube.com/watch?v=Fg7niTmNNLg&list=PL37ZVnwpeshFmAPr65sU2O5WMs7_CGjs_&index=11)
 - [Embedding V8 in the real world by Stanimira Vlaeva](https://www.youtube.com/watch?v=wz7Znu6tqFw&list=PL37ZVnwpeshHwJPVBqEnZild7QHWhdufu&index=17)
+- [How cloudflare Workers works](https://developers.cloudflare.com/workers/reference/how-workers-works/)
 
-### JSCore (from the blog)
-
-- [JavaScript core Speculation](https://webkit.org/blog/10308/speculation-in-javascriptcore/)
-- [A New Bytecode Format for JavaScriptCore](https://webkit.org/blog/9329/a-new-bytecode-format-for-javascriptcore/)
-- [Concurrent JavaScript: It can work!](https://webkit.org/blog/7846/concurrent-javascript-it-can-work/)
-- [JSC Love ES6](https://webkit.org/blog/7536/jsc-loves-es6/)
-- [Michael Saboff — JavaScriptCore, many compilers make this engine perform](https://www.youtube.com/watch?v=mtVBAcy7AKA)
-
----
-
-#### Blogs 
-
-- [Benedikt Meurer](https://benediktmeurer.de/)
-- [Vyacheslav Egorov](https://mrale.ph/)
-- [Mathias Bynens](https://mathiasbynens.be/)
-- [Franziska Hinkelmann](https://fhinkel.rocks/)
-
-#### V8 Shared documents on different performance issues
+#### Shared documents on different performance issues
 
 - [Surface engine signals via Tracing in V8](https://docs.google.com/document/d/1xHl4qF2olKtDEPQFkci8g_wF3oTA-NBoJ6z5cpw1PWk/preview)
 - [Fast string concatenation in Javascript](https://docs.google.com/document/d/1o-MJPAddpfBfDZCkIHNKbMiM86iDFld7idGbNQLuKIQ/preview)
@@ -80,6 +73,21 @@ Different articles and tools dealing with more or less important notions:
 - [Iterator builtins design document](https://docs.google.com/document/d/13z1fvRVpe_oEroplXEEX0a3WK94fhXorHjcOMsDmR-8/edit)
 - [Zero-cost async stack traces](https://docs.google.com/document/d/13Sy_kBIJGP0XT34V1CV3nkWya4TwYx9L3Yv45LdGB6Q/edit)
 
+### JSCore (from the blog)
+
+- [JavaScript core Speculation](https://webkit.org/blog/10308/speculation-in-javascriptcore/)
+- [A New Bytecode Format for JavaScriptCore](https://webkit.org/blog/9329/a-new-bytecode-format-for-javascriptcore/)
+- [Concurrent JavaScript: It can work!](https://webkit.org/blog/7846/concurrent-javascript-it-can-work/)
+- [JSC Love ES6](https://webkit.org/blog/7536/jsc-loves-es6/)
+- [Michael Saboff — JavaScriptCore, many compilers make this engine perform](https://www.youtube.com/watch?v=mtVBAcy7AKA)
+
+#### Blogs 
+
+- [Benedikt Meurer](https://benediktmeurer.de/)
+- [Vyacheslav Egorov](https://mrale.ph/)
+- [Mathias Bynens](https://mathiasbynens.be/)
+- [Franziska Hinkelmann](https://fhinkel.rocks/)
+
 #### Papers and academic research
 - [Revolutionizing Embedded Software](http://verdich.dk/kasper/RES.pdf)
 - [Context Threading: A flexible and efficient dispatch technique for virtual machine interpreters](http://www.cs.toronto.edu/syslab/pubs/demkea_context.pdf)
@@ -90,11 +98,12 @@ Different articles and tools dealing with more or less important notions:
 - [Loop-Aware Optimizations in PyPy's Tracing JIT](https://bitbucket.org/pypy/extradoc/src/98f94d389f25/talk/dls2012/licm.pdf)
 - [Constant propagation with conditional branches](https://dl.acm.org/citation.cfm?id=103136)
 
+> [!NOTE]
 > Most of them are referenced in the V8 documents.
 
----
-
 ## Language, Principles and Specifications
+
+- [Crafting Interpreters](https://craftinginterpreters.com/)
 
 ### Grammar
 - [BNF Grammar Example](http://www.cs.utsa.edu/~wagner/CS3723/grammar/examples2.html)
@@ -108,10 +117,13 @@ Different articles and tools dealing with more or less important notions:
 
 ### Data Abstraction, Object Oriented etc
 
-- (**recommanded**) [How Data Abstraction changed Computing forever | Barbara Liskov](https://www.youtube.com/watch?v=_jTc1BTFdIo)
-- (**recommanded**) [Proposal for Simplified, Modern Definitions of "Object" and "Object Oriented](https://wcook.blogspot.com/2012/07/proposal-for-simplified-modern.html)
-- (**recommanded**) [On Understanding Data Abstraction, Revisited](http://www.cs.utexas.edu/~wcook/Drafts/2009/essay.pdf)
-- (**recommanded**) [Programming Paradigms for Dummies: What Every Programmer Should Know](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf)
+- [How Data Abstraction changed Computing forever | Barbara Liskov](https://www.youtube.com/watch?v=_jTc1BTFdIo)
+- [On Understanding Data Abstraction, Revisited](http://www.cs.utexas.edu/~wcook/Drafts/2009/essay.pdf)
+- [Programming Paradigms for Dummies: What Every Programmer Should Know](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf)
+
+<details>
+  <summary>More papers and study (less important)</summary>
+
 - [A Self Bibliography](https://sites.cs.ucsb.edu/~urs/oocsb/self/papers/papers.html)
 - [Object-Oriented Programming Versus Abstract Data Types](http://www.cs.utexas.edu/~wcook/papers/OOPvsADT/CookOOPvsADT90.pdf)
 - [Data Abstraction and Hierarchy](https://pdfs.semanticscholar.org/36be/babeb72287ad9490e1ebab84e7225ad6a9e5.pdf)
@@ -121,6 +133,8 @@ Different articles and tools dealing with more or less important notions:
 - [A Behavioral Notion of Subtyping](https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf)
 - [Representing Type Information in Dynamically Typed Languages](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.39.4394&rep=rep1&type=pdf)
 - A theory of Objects by Martín Abadi, Luca Cardelli
+  
+</details>
 
 ### Others
 
